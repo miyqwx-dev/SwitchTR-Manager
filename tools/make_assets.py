@@ -54,6 +54,39 @@ def make_icon():
     out.save(A("assets", "preview_icon.png"))
 
 
+def fit(im, size, bg):
+    """Gorseli oranini bozmadan size icine sigdirir, kalan alan bg ile dolar."""
+    w, h = im.size
+    scale = min(size[0] / w, size[1] / h)
+    nw, nh = round(w * scale), round(h * scale)
+    out = Image.new("RGB", size, bg)
+    out.paste(im.resize((nw, nh), Image.LANCZOS), ((size[0] - nw) // 2, (size[1] - nh) // 2))
+    return out
+
+
+def make_store_images():
+    """HB App Store: simge 256x150, afis 848x208 -> store/"""
+    from PIL import ImageFont
+    os.makedirs(A("store"), exist_ok=True)
+    im = Image.open(A("assets", "icon_src.webp")).convert("RGB")
+    w, h = im.size
+    px = [im.getpixel(p) for p in [(2, 2), (w - 3, 2), (2, h - 3), (w - 3, h - 3)]]
+    bg = tuple(sum(c[i] for c in px) // len(px) for i in range(3))
+
+    fit(im, (256, 150), bg).save(A("store", "icon.png"))
+
+    banner = Image.new("RGB", (848, 208), bg)
+    art = fit(im, (370, 208), bg)
+    banner.paste(art, (24, 0))
+    d = ImageDraw.Draw(banner)
+    title = ImageFont.truetype(r"C:\Windows\Fonts\segoeuib.ttf", 46)
+    sub = ImageFont.truetype(r"C:\Windows\Fonts\seguisb.ttf", 22)
+    tx = 24 + 370 + 28
+    d.text((tx, 52), "SwitchTR Manager", font=title, fill=(74, 56, 62))
+    d.text((tx, 116), "Türkçe arayüz / Turkish UI for Switch", font=sub, fill=(200, 60, 52))
+    banner.save(A("store", "banner.png"))
+
+
 def make_qr():
     with open(A("source", "qr_codes.h"), "w", newline="\n") as f:
         f.write("// tools/make_assets.py tarafindan uretildi\n#pragma once\n")
@@ -74,4 +107,5 @@ if __name__ == "__main__":
     circle_logo(A("assets", "patch_logo_src.webp"), A("data", "patch_logo.bin"), A("assets", "preview_patch_logo.png"))
     make_icon()
     make_qr()
+    make_store_images()
     print("tamam")
