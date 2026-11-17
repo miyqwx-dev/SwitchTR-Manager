@@ -84,5 +84,11 @@ Every `v*` tag is built by GitHub Actions and attached to a release.
 | <img src="assets/dev_logo_src.png" width="64"> | **miyqwx** — uygulama geliştiricisi / app developer · [github.com/miyqwx-dev](https://github.com/miyqwx-dev) |
 | <img src="assets/patch_logo_src.webp" width="64"> | **Pasha Bey** — Türkçe yama / Turkish patch · [github.com/pextechh/SwitchTR](https://github.com/pextechh/SwitchTR) |
 
+## Lisans / License
+
+Kaynak kod [MIT lisansı](LICENSE) ile dağıtılır. Logolar ve ikon bu lisansa dahil değildir; sahiplerine aittir (ayrıntılar [LICENSE](LICENSE) dosyasında).
+
+The source code is released under the [MIT License](LICENSE). Logos and the icon are not covered by it and belong to their respective owners (see [LICENSE](LICENSE)).
+
 Bu proje Nintendo ile bağlantılı değildir. Nintendo Switch, Nintendo Co., Ltd.'nin ticari markasıdır.
 This project is not affiliated with Nintendo.
