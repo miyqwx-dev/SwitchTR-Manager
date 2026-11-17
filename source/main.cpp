@@ -480,13 +480,6 @@ static void drawHome() {
             gSys.lang + (gSys.langEnglish ? "" : L(" (İngilizce olmalı)", " (must be English)")), rx + 28, y, colW - 56,
             gSys.langEnglish ? cOnSurface : cError);
     infoRow(L("Uygulama sürümü", "App version"), APP_VER, rx + 28, y, colW - 56);
-
-    // gelistirici imzasi
-    int by = top + 332;
-    fillRR(rx, by, colW, 92, 24, cSurface);
-    drawLogo(gDevLogo, rx + 22, by + 16, 60);
-    text(L("Geliştirici", "Developer"), rx + 100, by + 18, 18, cOnSurfaceVar);
-    text(DEV_NAME "  ·  " DEV_GITHUB, rx + 100, by + 46, 22, cOnSurface);
 }
 
 static bool actionCard(const std::string &title, const std::string &sub, int y, bool danger = false) {
