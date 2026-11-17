@@ -1,9 +1,9 @@
 Logos and images / Logolar ve görseller
 
-The MIT license above covers the source code only. The following files are
+The MIT license in the LICENSE file covers the source code only. The following files are
 NOT covered by it and remain the property of their respective owners:
 
-Yukarıdaki MIT lisansı yalnızca kaynak kodu kapsar. Aşağıdaki dosyalar bu
+LICENSE dosyasındaki MIT lisansı yalnızca kaynak kodu kapsar. Aşağıdaki dosyalar bu
 lisansa dahil değildir ve sahiplerine aittir:
 
   assets/dev_logo_src.png, data/dev_logo.bin      (c) miyqwx
