@@ -86,9 +86,9 @@ Every `v*` tag is built by GitHub Actions and attached to a release.
 
 ## Lisans / License
 
-Kaynak kod [MIT lisansı](LICENSE) ile dağıtılır. Logolar ve ikon bu lisansa dahil değildir; sahiplerine aittir (ayrıntılar [LICENSE](LICENSE) dosyasında).
+Kaynak kod [MIT lisansı](LICENSE) ile dağıtılır. Logolar ve ikon bu lisansa dahil değildir; sahiplerine aittir (ayrıntılar [NOTICE](NOTICE) dosyasında).
 
-The source code is released under the [MIT License](LICENSE). Logos and the icon are not covered by it and belong to their respective owners (see [LICENSE](LICENSE)).
+The source code is released under the [MIT License](LICENSE). Logos and the icon are not covered by it and belong to their respective owners (see [NOTICE](NOTICE)).
 
 Bu proje Nintendo ile bağlantılı değildir. Nintendo Switch, Nintendo Co., Ltd.'nin ticari markasıdır.
 This project is not affiliated with Nintendo.

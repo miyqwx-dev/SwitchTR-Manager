@@ -19,20 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-
-Logos and images / Logolar ve görseller
-
-The MIT license above covers the source code only. The following files are
-NOT covered by it and remain the property of their respective owners:
-
-Yukarıdaki MIT lisansı yalnızca kaynak kodu kapsar. Aşağıdaki dosyalar bu
-lisansa dahil değildir ve sahiplerine aittir:
-
-  assets/dev_logo_src.png, data/dev_logo.bin      (c) miyqwx
-  assets/patch_logo_src.webp, data/patch_logo.bin (c) Pasha Bey
-  assets/icon_src.webp, icon.jpg                  (c) miyqwx
-
-Nintendo Switch is a trademark of Nintendo Co., Ltd. This project is not
-affiliated with Nintendo.
