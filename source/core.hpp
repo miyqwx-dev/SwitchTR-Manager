@@ -9,7 +9,7 @@
 
 #define REPO_OWNER "pextechh"
 #define REPO_NAME "SwitchTR"
-#define APP_VER "1.1.0"
+#define APP_VER "1.1.1"
 #define DEV_NAME "miyqwx"
 #define DEV_GITHUB "github.com/miyqwx-dev"
 #define CONTENTS_DIR "sdmc:/atmosphere/contents/"
