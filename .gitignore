@@ -1,0 +1,13 @@
+build/
+out/
+dist/
+*.elf
+*.nro
+*.nacp
+*.nso
+*.pfs0
+*.lst
+*.map
+SwitchTR-Manager.zip
+assets/preview_*.png
+__pycache__/
